@@ -49,5 +49,5 @@ app.use((err, req, res) => {
   res.status(401).send({ error: err.message });
 }); 
 
-PORT = 8080;
+PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
