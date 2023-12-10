@@ -12,19 +12,19 @@ const dropTables = async () => {
   }
 };
 
-const createTables = async () => {
-  try {
-    await client.query(`
-        CREATE TABLE users(
-            id SERIAL PRIMARY KEY,
-            username VARCHAR(30) UNIQUE NOT NULL,
-            password VARCHAR(60) NOT NULL
-        );   
-        `);
-  } catch (err) {
-    console.log(err);
-  }
-};
+// const createTables = async () => {
+//   try {
+//     await client.query(`
+//         CREATE TABLE users(
+//             id SERIAL PRIMARY KEY,
+//             username VARCHAR(30) UNIQUE NOT NULL,
+//             password VARCHAR(60) NOT NULL
+//         );   
+//         `);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
 const syncAndSeed = async () => {
   try {
