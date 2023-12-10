@@ -34,13 +34,11 @@ const syncAndSeed = async () => {
     await dropTables();
     console.log("tables dropped");
 
-    await createTables();
+
     console.log("tables made");
 
     //fake users that we seeded
     await createUser("eli", "andre666");
-    await createUser("cane hill", "swampkrewe44");
-    await createUser("yo mama", "banana123");
     console.log("users created");
   } catch (err) {
     console.log(err);
